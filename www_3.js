@@ -25,7 +25,7 @@ http.createServer(async function(req, res){
 		res.write(pageHead);
 		res.write(pageBanner);
 		res.write(pageBody);
-		res.write('\n\t<p>Täna on ' + dateET.day() + ', ' + dateET.fullDate(1) + ', kell oli lehe avamise hetkel: ' + dateET.fullTime() +'.</p>');
+		res.write('\n\t<p>Täna on ' + dateET.day() + ', ' + dateET.fullDate(Math.round(Math.random())) + ', kell oli lehe avamise hetkel: ' + dateET.fullTime() +'.</p>');
 		res.write('\n\t<ul>');
 		res.write('\n\t\t<li><a href="/vanasona">Tänane vanasõna</a></li>');
 		res.write('\n\t</ul>');
